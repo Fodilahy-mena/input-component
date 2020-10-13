@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+    font-family: Ubuntu Mono;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* As a default */
+.input {
+    align-items: center;
+	display: flex;
+	padding: 1.24rem 1.31rem;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #828282;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+
+.input:active,
+.input:hover {
+	border: 1px solid #333333;
+    box-sizing: border-box;
+	outline: none;
+}
+.input:focus {
+    border: 1px solid #2962FF;
+    outline: none;
+}
+.label {
+    pointer-events: auto;
+}
+.label:focus-within {
+    color: #2962FF;
+}
+
+/* error input */
+
+.input--error {
+    border: 1px solid #D32F2F;
+}
+
+.input--error:focus {
+    border: 1px solid #D32F2F;
+}
+
+.errorLabel {
+    pointer-events: auto;
+    color: #D32F2F;
+}
+.errorLabel:hover {
+    color: #828282;
+}
+
+.errorLabel:focus-within {
+    color: #D32F2F;
+    border: 1px solid #D32F2F;
+}
+
+/* disabled input */
+
+.input:disabled {
+    background: #F2F2F2;
+	border: none;
+    border: 1px solid #E0E0E0;
+	color: #9e9e9e;
+	cursor: default;
+	fill: #9e9e9e;
+}
+
+
+/*# sourceMappingURL=/input.3f2f1da1.css.map */
