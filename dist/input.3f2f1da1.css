@@ -27,8 +27,7 @@ main {
     box-sizing: border-box;
     border-radius: 8px;
     color: #828282;
-    cursor: pointer;
-    pointer-events: auto;
+    cursor: default;
 }
 
 
@@ -64,7 +63,6 @@ main {
 }
 
 .errorLabel {
-    pointer-events: auto;
     outline: none;
     color: #D32F2F;
 }
