@@ -32,9 +32,26 @@
 ### Screenshot demo
 ![screenshot](./screenshot.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
--   Where can I see your demo?
+This is my [Input component](https://5f86fa14092a0fc95852c5b5--vigilant-leavitt-d2af23.netlify.app/) which is made with react. The screenshot above is the demo of the accomplished challenge. 
+
+Most of the user story were ok but setting icons in the inputs were a bit challenging. However, it's done with css backgroung.
+
+```v
+  .input--startIcon::-ms-input-placeholder {
+    background: url('./assets/call.svg') no-repeat;
+    background-position: 16px;
+    opacity: .6;
+} 
+
+.input--startIcon:placeholder-shown {
+    background: url('./assets/call.svg') no-repeat; 
+    background-position: 16px;
+    opacity: .6;
+    
+  }
+
+```
 -   What was your experience?
 -   What have you learned/improved?
 -   Your wisdom? :)
