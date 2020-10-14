@@ -4,13 +4,25 @@ body {
     font-family: Ubuntu Mono;
     font-style: normal;
     font-weight: normal;
+    color: #333333;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+main {
+    max-width: 656px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding: 1rem;
 }
 
 /* As a default */
 .input {
     align-items: center;
 	display: flex;
-	padding: 1.24rem 1.31rem;
+	padding: 1.2341rem 1.302rem;
     border: 1px solid #828282;
     box-sizing: border-box;
     border-radius: 8px;
@@ -33,6 +45,9 @@ body {
 .label {
     pointer-events: auto;
 }
+.label:hover {
+    color: #828282;
+}
 .label:focus-within {
     color: #2962FF;
 }
@@ -41,6 +56,7 @@ body {
 
 .input--error {
     border: 1px solid #D32F2F;
+    outline: none;
 }
 
 .input--error:focus {
@@ -49,6 +65,7 @@ body {
 
 .errorLabel {
     pointer-events: auto;
+    outline: none;
     color: #D32F2F;
 }
 .errorLabel:hover {
@@ -57,7 +74,6 @@ body {
 
 .errorLabel:focus-within {
     color: #D32F2F;
-    border: 1px solid #D32F2F;
 }
 
 /* disabled input */
@@ -71,5 +87,86 @@ body {
 	fill: #9e9e9e;
 }
 
+/* helperText */
+/* helperText with error */
+.helperTxtErrorLabel {
+    color: #D32F2F;
+}
+.input--helperTextError {
+    border: 1px solid #D32F2F;
+}
+
+/* icons */
+
+
+.input--startIcon::-webkit-input-placeholder,
+.input--startIcon::-moz-placeholder,
+.input--startIcon::-ms-input-placeholder {
+    background: url('/call.88be7624.svg') no-repeat;
+    background-position: 16px;
+    opacity: .6;
+} 
+
+.input--startIcon:placeholder-shown {
+    background: url('/call.88be7624.svg') no-repeat; 
+    background-position: 16px;
+    opacity: .6;
+    
+  }
+  .input--startIcon::placeholder {
+    padding-inline-start: 30px;
+    
+}
+
+.input--endIcon::-webkit-input-placeholder,
+.input--endIcon::-moz-placeholder,
+.input--endIcon::-ms-input-placeholder {
+    background: url('/lock.979c328c.svg') no-repeat;
+    background-position: 157px;
+    opacity: .6;
+} 
+
+.input--endIcon:placeholder-shown {
+    background: url('/lock.979c328c.svg') no-repeat; 
+    background-position: 157px;
+    opacity: .6;
+  }
+
+/* sizes */ 
+.input--sm {
+    padding: .73333rem 1.302rem;
+}
+.input--md {
+    padding: 1.2341rem 1.302rem;
+}
+
+/* input--fullWidth */
+.input--fullWidth {
+    width: 100%;
+}
+
+/* textares */
+
+/* container */
+
+.container {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.container > div {
+    margin-block-end: 1rem;
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 2rem;
+    }
+    .container > div {
+        margin-block-end: 0;
+    }
+  }
 
 /*# sourceMappingURL=/input.3f2f1da1.css.map */
