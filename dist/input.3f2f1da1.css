@@ -82,7 +82,7 @@ main {
 	border: none;
     border: 1px solid #E0E0E0;
 	color: #9e9e9e;
-	cursor: default;
+	cursor: not-allowed;
 	fill: #9e9e9e;
 }
 
