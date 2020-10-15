@@ -16,6 +16,7 @@ main {
     max-width: 960px;
     margin: 0 auto;
     position: relative;
+    padding: 1rem;
 }
 
 /* As a default */
