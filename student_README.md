@@ -33,7 +33,7 @@
 ![screenshot](./screenshot.png)
 
 
-This is my [Input component](https://5f86fa14092a0fc95852c5b5--vigilant-leavitt-d2af23.netlify.app/) which is made with react. The screenshot above is the demo of the accomplished challenge. 
+This is my [Input component](https://5f87f064f8a7179adf6cc514--dreamy-bell-d25bc4.netlify.app/) which is made with react. The screenshot above is the demo of the accomplished challenge. 
 
 Most of the user story were ok but setting icons in the inputs were a bit challenging. However, it's done with css backgroung.
 
