@@ -37,13 +37,15 @@ This is my [Input component](https://5f86fa14092a0fc95852c5b5--vigilant-leavitt-
 
 Most of the user story were ok but setting icons in the inputs were a bit challenging. However, it's done with css backgroung.
 
-```v
+```css
+/* We have to use those properties to both selectors for the safe side of browsers support */
   .input--startIcon::-ms-input-placeholder {
     background: url('./assets/call.svg') no-repeat;
     background-position: 16px;
     opacity: .6;
 } 
-
+/*  also for this selector, it is whether 
+shown or hidden*/
 .input--startIcon:placeholder-shown {
     background: url('./assets/call.svg') no-repeat; 
     background-position: 16px;
@@ -52,9 +54,16 @@ Most of the user story were ok but setting icons in the inputs were a bit challe
   }
 
 ```
--   What was your experience?
--   What have you learned/improved?
--   Your wisdom? :)
+
+I also had a difficulty with the colour of label to be the same colour as the border when focusing and hovering the input. It works with hover but the focuse didn't unless I used 
+```css 
+.label:focus-within {
+  /* css properties here-- */
+}
+ ```
+
+Those things are considerably new for me. I'm not sure if it makes sense with css style but I know it does the trick - `(hack)`. I learned many things through this challenge.
+
 
 ### Built With
 
